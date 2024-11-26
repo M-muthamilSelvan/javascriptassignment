@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(...rest){
+            const tot=rest.reduce((acc,num)=> acc+num);
+            console.log(`the total of value using rest operator : ${tot}`);
+
+        }
+        fun(7,3,6,7,3,65,34)
+    </script>
+</body>
+</html>

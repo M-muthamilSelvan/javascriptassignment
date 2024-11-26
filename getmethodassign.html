@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightcyan;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: lightseagreen;
+            color: orangered;
+            padding: 18px 0;
+        }
+
+        .navbar ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .navbar ul li a:hover {
+            color: red;
+        }
+
+        .headers {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .headers h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .main-footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        .main-footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <nav id="n1" class="navbar">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <header id="h1" class="headers">
+        <h1>WELCOME TO YOU ALL</h1>
+    </header>
+
+    <div id="div1" class="container">
+        
+        <p id="p1" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam mollitia tempora, laboriosam officia sapiente quaerat necessitatibus facilis perspiciatis exercitationem.</p>
+        <p id="p1" class="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, molestias nulla. Praesentium molestias quae vel eius deleniti illo quasi amet?</p>
+    </div>
+
+    <footer id="f1" class="main-footer">
+        <p>footer area !.....</p>
+    </footer>
+
+    <script>
+        const a = document.getElementById("n1");
+        console.log(a);
+
+        const b = document.getElementsByClassName("main-footer");
+        console.log(b);
+
+        const c = document.querySelector("#h1");
+        console.log(c);
+
+        const a1 = document.querySelectorAll("#n1");
+        console.log(a1);
+
+        const b1 = document.getElementById("f1");
+        console.log(b1);
+    </script>
+</body>
+</html>
